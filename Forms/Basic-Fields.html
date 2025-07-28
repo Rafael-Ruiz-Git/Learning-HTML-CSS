@@ -21,11 +21,74 @@
             name="firstname"
             placeholder="Your name.."
             required
+            />
+
+          <label for="email">Email</label>
+          <input
+          type="email"
+          id="email"
+            name="email"
+            placeholder="Your Email.."
+            required
           />
+
+          
+                      <!-- Phone Number -->
+          <label for="phone">Phone Number</label>
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            pattern="[0-9] {3}-[0-9] {3}-[0-9] {4}"
+            placeholder="000-000-0000"
+             />
+
+                      <!-- age-->
+          <label for="age">Age</label>
+          <input
+            type="number"
+            id="age"
+            name="age"
+                      placeholder="Your Age"
+             />
+
+        <!-- Date-->
+          <label for="dob">Date of Birth</label>
+          <input
+            type="date"
+            id="dob"
+            name="dob"
+                   
+             />
+
+                <!-- Month-->
+          <label for="month">Month of Birth</label>
+          <input
+            type="month"
+            id="month"
+            name="month"
+                  
+             />
+          
+           <!-- Time-->
+          <label for="time">Preffered Time</label>
+          <input
+            type="time"
+            id="time"
+            name="time"
+                  
+             />
+
+        <!-- Color-->
+          <label for="color">Preffered Color</label>
+          <input
+          style="height: 80px"
+            type="color"
+            id="color"
+            name="color"
+                                />
         </div>
-
         
-
         <div class="form-column">
           <!-- Last Name -->
           <label for="lname">Last Name</label>
@@ -36,8 +99,80 @@
             placeholder="Your last name.."
             required
           />
-        </div>
-      </div>
+
+          <!-- Password -->
+          <label for="Password">Password</label>
+          <input
+            type="password"
+            id="Password"
+            name="Password"
+            placeholder="Your Password.."
+            required />
+
+
+                      <!-- Website -->
+          <label for="web">Website</label>
+          <input
+            type="url"
+            id="web"
+            name="web"
+            placeholder="Your Website.."
+            />
+          
+            <!-- Dropdown/Country -->
+          <label for="country">Country</label>
+          <select id="country" name="country">
+          <option value="usa">USA</option>
+          <option value="australia">Australia</option>
+          <option value="canada">Canada</option>
+          </select>
+
+
+          <!-- Radio -->
+          <p>Gender:</p>
+  <label for="male">Male</label>
+          <input
+            type="radio"
+            id="male"
+            name="gender"
+                      required />
+
+    <label for="female">Female</label>
+          <input
+            type="radio"
+            id="female"
+            name="gender"
+        />
+  <label for="other">Other</label>
+          <input
+            type="radio"
+            id="other"
+            name="gender"
+       />
+              
+
+          <!-- Checkbox -->
+          <p>Agree or Disagree:</p>
+  <label for="agree">I agree</label>
+          <input
+            type="checkbox"
+            id="agree"
+            name="terms"
+                      required />
+
+    <label for="Disagree">Disagree</label>
+          <input
+            type="checkbox"
+            id="Disagree"
+            name="terms"
+                      required />
+
+              </div>
+            
+              </div>
+
+                
+      
       <!-- Submit Button -->
       <div>
         <button type="submit">Submit</button>
